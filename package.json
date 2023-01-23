@@ -12,6 +12,7 @@
     "vite": "^4.0.0"
   },
   "dependencies": {
+    "vite-plugin-pwa": "^0.14.1",
     "wldd-pointjs": "^2.0.9"
   }
 }
