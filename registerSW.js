@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/template-pointjs/sw.js', { scope: '/template-pointjs/' })})}
