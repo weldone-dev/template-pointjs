@@ -4,7 +4,7 @@ class Component {
         this.init()
     }
     resize(){
-        this.init()
+        setTimeout(this.init, 200)
     }
     init() {}
 
