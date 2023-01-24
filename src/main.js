@@ -1,4 +1,3 @@
-import './style.css'
 import PointJS from "wldd-pointjs"
 import Logo from "./components/Logo.js";
 
@@ -10,10 +9,10 @@ import Logo from "./components/Logo.js";
         new Logo(pjs)
     ]
 
-    pjs.system.addEvent("gameResize", "myResize", function () {
+    pjs.system.addEvent("gameResize", "PointJS_resizeGame", function () {
+        console.log("gameResize")
         components.forEach(component => component.resize())
     });
-
     pjs.game.newLoop("game", () => {
         components.forEach(component => component.render())
     })
