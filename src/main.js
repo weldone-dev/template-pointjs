@@ -10,7 +10,6 @@ import Logo from "./components/Logo.js";
     ]
 
     pjs.system.addEvent("gameResize", "PointJS_resizeGame", function () {
-        console.log("gameResize")
         components.forEach(component => component.resize())
     });
     pjs.game.newLoop("game", () => {

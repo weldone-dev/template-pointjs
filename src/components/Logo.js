@@ -6,7 +6,6 @@ class Logo extends Component {
         const canvasWH = this.pjs.system.getWH()
         const width = canvasWH.w/2
         const height = width
-        console.log({width, height})
         this.obj = this.pjs.game.newImageObject(   {
             file : logoPath,
             x : canvasWH.w/2 - width/2,
@@ -14,8 +13,6 @@ class Logo extends Component {
             w : width,
             h : height,
         });
-        console.log({...canvasWH})
-        console.log(this.obj.x)
     }
     render() {
         this.obj.turn(1);
